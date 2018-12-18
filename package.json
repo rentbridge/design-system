@@ -1,0 +1,20 @@
+{
+  "name": "@rentbridge/design-system",
+  "version": "0.1.0",
+  "description": "Design system for Rentbridge.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "repository": "git@github.com:rentbridge/design-system.git",
+  "author": "Nathan Knowler",
+  "license": "MIT",
+  "dependencies": {
+    "@rebass/components": "^4.0.0-1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0"
+  }
+}
