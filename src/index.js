@@ -1,4 +1,5 @@
 import system from '@rebass/components'
+import { themeGet } from 'styled-system'
 
 // styled-components theme
 const theme = {
@@ -22,7 +23,7 @@ const Button = system({
     color: 'white',
     bg: 'orange',
     borderRadius: '9999px',
-    fontFamily: 'sansSerif',
+    fontFamily: themeGet('typeface.sansSerif'),
   },
   // core
   'space',
@@ -63,37 +64,42 @@ const Button = system({
 )
 
 // Box
-const Box = system({
-    is: 'div',
-  },
-  // core
+const Box = system(
   'space',
   'width',
-  'color',
   'fontSize',
-  // borders
-  'borders',
-  'borderColor',
-  'borderRadius',
-  // layout
+  'textColor',
+  'bgColor',
+  'color',
+  'fontFamily',
+  'textAlign',
+  'lineHeight',
+  'fontWeight',
+  'fontStyle',
+  'letterSpacing',
   'display',
   'maxWidth',
   'minWidth',
   'height',
   'maxHeight',
   'minHeight',
-  // flexbox
+  'sizeWidth',
+  'sizeHeight',
+  'size',
+  'ratioPadding',
+  'ratio',
+  'verticalAlign',
   'alignItems',
   'alignContent',
+  'justifyItems',
   'justifyContent',
   'flexWrap',
+  'flexBasis',
   'flexDirection',
   'flex',
-  'flexBasis',
   'justifySelf',
   'alignSelf',
   'order',
-  // grid
   'gridGap',
   'gridColumnGap',
   'gridRowGap',
@@ -106,13 +112,31 @@ const Box = system({
   'gridTemplateRows',
   'gridTemplateAreas',
   'gridArea',
-  // position
+  'border',
+  'borderTop',
+  'borderRight',
+  'borderBottom',
+  'borderLeft',
+  'borders',
+  'borderColor',
+  'borderRadius',
+  'boxShadow',
+  'opacity',
+  'overflow',
+  'background',
+  'backgroundImage',
+  'backgroundPosition',
+  'backgroundRepeat',
+  'backgroundSize',
   'position',
   'zIndex',
   'top',
   'right',
   'bottom',
   'left',
+  'textStyle',
+  'colorStyle',
+  'buttonStyle',
 )
 
 // Default export

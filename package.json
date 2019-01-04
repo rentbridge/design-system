@@ -1,6 +1,6 @@
 {
   "name": "@rentbridge/design-system",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Design system for Rentbridge.",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,8 @@
   "author": "Nathan Knowler",
   "license": "MIT",
   "dependencies": {
-    "@rebass/components": "^4.0.0-1"
+    "@rebass/components": "^4.0.0-1",
+    "styled-system": "^3.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
