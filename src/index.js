@@ -1,7 +1,8 @@
 import system from '@rebass/components'
 import { themeGet } from 'styled-system'
 import all, { 
-  borders, 
+  background,
+  border, 
   dimension,
   flexbox,
   layout,
@@ -34,7 +35,8 @@ const Button = system({
     fontWeight: '600',
     wordBreak: 'keep-all',
   },
-  ...borders,
+  ...background,
+  ...border,
   ...dimension,
   ...flexbox,
   ...layout,
@@ -43,7 +45,7 @@ const Button = system({
 )
 
 // Box
-const Box = system({ is: 'div' }, all)
+const Box = system({ is: 'div' }, ...all)
 
 // Default export
 export default designSystem
