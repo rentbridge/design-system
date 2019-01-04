@@ -1984,6 +1984,11 @@ supports-color@^5.3.0:
   dependencies:
     has-flag "^3.0.0"
 
+system-prop-sets@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/system-prop-sets/-/system-prop-sets-0.1.0.tgz#94f29e3daad6af01f582c32bf24405a8fe86cacc"
+  integrity sha512-mPC+Za/hAYhLLjNfVQWlvKizYCDJwPs8RMYjAhLP95VZ0XniO7kQBHNa6heU+Wj7Qc8R7LWJUGw+0Ih4+EqNjg==
+
 tar@^4:
   version "4.4.8"
   resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.8.tgz#b19eec3fde2a96e64666df9fdb40c5ca1bc3747d"
