@@ -22,12 +22,15 @@ const Button = system({
     color: 'white',
     bg: 'orange',
     borderRadius: '9999px',
+    fontFamily: 'sansSerif',
   },
   // core
   'space',
   'width',
   'color',
   'fontSize',
+  // fonts
+  'fontFamily',
   // borders
   'borders',
   'borderColor',
