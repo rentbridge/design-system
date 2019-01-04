@@ -1,9 +1,6 @@
 import system from '@rebass/components'
-import { themeGet } from 'styled-system'
 import all, { 
-  background,
   border, 
-  dimension,
   flexbox,
   layout,
   typography 
@@ -31,13 +28,13 @@ const Button = system({
     color: 'white',
     bg: 'orange',
     borderRadius: '9999px',
-    fontFamily: themeGet('typeface.sansSerif'),
+    fontFamily: designSystem.typeface.sansSerif,
     fontWeight: '600',
     wordBreak: 'keep-all',
   },
-  ...background,
+  'space',
+  'color',
   ...border,
-  ...dimension,
   ...flexbox,
   ...layout,
   ...typography,
