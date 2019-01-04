@@ -64,7 +64,9 @@ const Button = system({
 )
 
 // Box
-const Box = system(
+const Box = system({
+    is: 'div',
+  },
   'space',
   'width',
   'fontSize',
