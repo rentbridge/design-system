@@ -34,6 +34,7 @@ const Button = system({
   },
   'space',
   'color',
+  'width',
   ...border,
   ...flexbox,
   ...layout,
