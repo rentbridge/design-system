@@ -10,26 +10,28 @@ import all, {
 import { wordBreak } from './utils/styles'
 
 // styled-components theme
-const designSystem = {
-  typeface: {
-    sansSerif: 'brother-1816, sans-serif',
-  },
+export const designSystem = {
   colors: {
     'white': '#ffffff',
     'stone-grey': '#707070',
     'green': '#39c6bd',
     'orange': '#ef883d',
-  }
+  },
+  fonts: {
+    sansSerif: 'brother-1816, sans-serif',
+  },
+  fontWeights: [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
+  radii: { full: 9999 },
 }
 
 // Button
-const Button = system({
+export const Button = system({
     is: 'button',
     color: 'white',
     bg: 'orange',
-    borderRadius: '9999px',
-    fontFamily: designSystem.typeface.sansSerif,
-    fontWeight: '600',
+    borderRadius: 'full',
+    fontFamily: 'sansSerif',
+    fontWeight: 6,
     wordBreak: 'keep-all',
   },
   'space',
@@ -43,10 +45,7 @@ const Button = system({
 )
 
 // Box
-const Box = system({ is: 'div' }, ...all)
+export const Box = system({ is: 'div' }, ...all)
 
 // Default export
 export default designSystem
-
-// Component exports
-export { Button, Box }

@@ -1,10 +1,10 @@
 {
   "name": "@rentbridge/design-system",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Design system for Rentbridge.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src -d dist"
+    "build": "rimraf dist && babel src -d dist"
   },
   "repository": "git@github.com:rentbridge/design-system.git",
   "author": "Nathan Knowler",
@@ -15,6 +15,7 @@
     "system-prop-sets": "^0.1.0"
   },
   "devDependencies": {
+    "rimraf": "^2.6.3",
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0"
